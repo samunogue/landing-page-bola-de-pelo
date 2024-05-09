@@ -1,0 +1,105 @@
+@import "./index.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.link-navbar{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: white;
+}
+.banner{
+  width: 100%;
+  height: 88vh;
+}
+.titulo-banner{
+  position: absolute;
+  width: 20vw;
+  right: 8vw;
+  top: 40vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  border-bottom: solid #FD831C 5px;
+}
+.titulo-quem-somos{
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: black;
+}
+.texto-quem-somos{
+  width: 40vw;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: black;
+}
+.botao-card{
+  width: 100%;
+  background-color:#00AB3A;
+}
+.titulo-card{
+  font-family: "Montserrat", sans-serif;
+  font-size:2rem;
+  font-weight: bold;
+  color: #FD831C;
+}
+.descricao-card{
+  font-family: "Montserrat", sans-serif;
+  font-size:.9rem;
+  font-weight: 600;
+  color: black;
+}
+
+.botao-card{
+  width:100%;
+  height: 5vh;
+  background-color: #00AB3A;
+}
+.texto-botao{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.titulo-fale-conosco{
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.descricao-fale-conosco{
+  width: 40vw;
+  margin-top: 2vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: black;
+}
+.info-fale-conosco{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.texto-footer{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  
+}
+
+
+.botao-fale-conosco{
+  width:100%;
+  height: 6vh;
+  margin-top: 2vh;
+  background-color: #00AB3A;
+
+}
+.texto-botao-fale-conosco{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
