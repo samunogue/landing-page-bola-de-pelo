@@ -63,7 +63,7 @@ function App() {
 
   useEffect(() =>{
     const pegarIp = async () =>{
-      await getData()
+      //await getData()
     }
     pegarIp()
   },[])
@@ -264,15 +264,15 @@ function App() {
                 <p className='descricao-fale-conosco-full'>Queremos ouvir você! Seja para oferecer um lar amoroso a um de nossos animais resgatados, fazer uma doação, se voluntariar ou apenas compartilhar sua experiência conosco, estamos aqui para ajudar e apreciamos seu apoio.</p>
                 <Flex vertical={false} align='center' justify='center' gap={20} style={{marginTop:30}}>
                   <FontAwesomeIcon icon={faWhatsapp} color='#FD831C' size='2x' />
-                  <p className='info-fale-conosco'>85 9783-3091</p>
+                  <p className='info-fale-conosco-full'>85 9783-3091</p>
                 </Flex>
                 <Flex vertical={false} align='center' justify='center' gap={20} style={{marginTop:10}}>
                   <FontAwesomeIcon icon={faEnvelope} color='#FD831C' size='2x'  />
-                  <p className='info-fale-conosco'>boladepeloprotetores@gmail.com</p>
+                  <p className='info-fale-conosco-full'>boladepeloprotetores@gmail.com</p>
                 </Flex>
                 <Flex vertical={false} align='center' justify='center' gap={20} style={{marginTop:10}}>
                   <FontAwesomeIcon icon={faInstagram} color='#FD831C' size='2x'  />
-                  <a href='https://www.instagram.com/boladepelo_sapiranga?igsh=MXU5NWZxN2dmMWx6eg==' className='info-fale-conosco'>Bola de Pelo</a>
+                  <a href='https://www.instagram.com/boladepelo_sapiranga?igsh=MXU5NWZxN2dmMWx6eg==' className='info-fale-conosco-full'>Bola de Pelo</a>
                 </Flex>
               </Flex>
               <Flex vertical={true} align='flex-start' justify='flex-start' gap={10}>

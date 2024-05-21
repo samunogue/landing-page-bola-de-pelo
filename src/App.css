@@ -78,7 +78,7 @@
   color: black;
 }
 .descricao-fale-conosco-full{
-  width: 100%;
+  width: 80%;
   margin-top: 2vh;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
@@ -88,6 +88,11 @@
 .info-fale-conosco{
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
+  font-weight: 600;
+}
+.info-fale-conosco-full{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
   font-weight: 600;
 }
 .texto-footer{
