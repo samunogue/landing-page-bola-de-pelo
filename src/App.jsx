@@ -9,11 +9,63 @@ import medica from "./assets/medica.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faMailchimp, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import axios from 'axios';
+import { useEffect } from 'react';
 const { TextArea } = Input;
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [ip, setIP] = useState("");
 
+  //creating function to load ip address from the API
+  // const getData = async () => {
+  //   const res = await axios.get("https://geolocation-db.com/json/");
+  //   console.log(res.data);
+  //   setIP(res.data.IPv4);
+  // };
+
+  // Updated Code
+
+  const getData = async () => {
+    const res = await axios.get("https://api.ipify.org/?format=json");
+    console.log(res.data);
+    setIP(res.data.ip);
+    const date = new Date()
+    const body = {
+      "ip":res.data.ip,
+      "data_hora": `${date.toLocaleDateString()}`
+    }
+    console.log(body)
+    return await axios({
+      method: "POST",
+      data: JSON.stringify(body), 
+      headers:{
+        'Content-Type': 'application/json',
+      },
+      url: "https://bola-de-pelo-8a8c3-default-rtdb.firebaseio.com/dados.json",
+    })
+    .then(response =>{ 
+      if(response.status == 201){
+        return response.data
+      }else{
+        return response.data
+      }
+    })
+    .catch(error =>{
+      if(error.response.status == 403){
+        return false
+      }if(error.response.status == 404){
+        return false
+      }
+      return error.response.data
+  })
+  };
+
+  useEffect(() =>{
+    const pegarIp = async () =>{
+      await getData()
+    }
+    pegarIp()
+  },[])
   return (
    <Flex vertical={true} align='flex-start' justify='center' style={{width:"100%", height:"100%", padding:0, margin:0}}>
     <Card style={{backgroundColor:"#FD831C", width:"100%", borderRadius:0, height:"12vh"}}>
