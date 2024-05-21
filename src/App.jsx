@@ -41,7 +41,7 @@ function App() {
 
       <Card style={{backgroundColor:"#FD831C", width:"100%", borderRadius:0,paddingTop:"10vh",}}>
         <Flex wrap={"wrap"} vertical={false} align='center' justify='space-around' style={{width:"100%"}}>
-          <Card style={{backgroundColor:"white", width:"30%", borderRadius:10, height:"70vh", padding:0}}
+          <Card style={{backgroundColor:"white", width:"30%", borderRadius:10, minHeight:"70vh", padding:0}}
           cover={
             <img alt="example" src={cachorro} height={300}/>}
             >
@@ -57,7 +57,7 @@ function App() {
               </Flex>
             </Flex>
           </Card>
-          <Card style={{backgroundColor:"white", width:"30%", borderRadius:10, height:"70vh", padding:0}}
+          <Card style={{backgroundColor:"white", width:"30%", borderRadius:10, minHeight:"70vh", padding:0}}
           cover={
             <img alt="example" src={lar} height={300}/>}
             >
@@ -74,7 +74,7 @@ function App() {
             </Flex>
           </Card>
 
-          <Card style={{backgroundColor:"white", width:"30%", borderRadius:10, height:"70vh", padding:0}}
+          <Card style={{backgroundColor:"white", width:"30%", borderRadius:10, minHeight:"70vh", padding:0}}
           cover={
             <img alt="example" src={medica} height={300}/>}
             >
@@ -90,7 +90,7 @@ function App() {
               </Flex>
             </Flex>
           </Card>
-          <Card style={{backgroundColor:"white", width:"80%", borderRadius:10, height:"53vh", marginTop:"10vh", marginBottom:"10vh"}}>
+          <Card style={{backgroundColor:"white", width:"80%", borderRadius:10, minHeight:"60vh", marginTop:"10vh", marginBottom:"10vh"}}>
             <Flex vertical={false} align='flex-start' justify='space-between' style={{width:"100%"}}>
               <Flex vertical={true} align='flex-start' justify='flex-start'>
                 <h1 className='titulo-fale-conosco'>Fale Conosco</h1>
