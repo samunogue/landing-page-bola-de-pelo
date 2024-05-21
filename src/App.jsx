@@ -30,8 +30,6 @@ function App() {
 
   const getData = async () => {
     const res = await axios.get("https://api.ipify.org/?format=json");
-    console.log(res.data);
-    setIP(res.data.ip);
     const date = new Date()
     const body = {
       "ip":res.data.ip,
