@@ -63,7 +63,7 @@ function App() {
 
   useEffect(() =>{
     const pegarIp = async () =>{
-      //await getData()
+      await getData()
     }
     pegarIp()
   },[])
